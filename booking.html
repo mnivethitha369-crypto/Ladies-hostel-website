@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Room</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">NS Ladies Hostel</div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="rooms.html">Rooms</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="booking.html">Book Room</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-banner">
+        Book a Room
+    </div>
+
+    <section class="booking-section">
+        <div class="booking-card">
+
+            <h2>Book Your Room</h2>
+
+            <form id="bookingForm">
+
+                <input
+                    type="text"
+                    name="name"
+                    placeholder="Full Name"
+                    required
+                >
+
+                <input
+                    type="number"
+                    name="age"
+                    placeholder="Age"
+                    required
+                >
+
+                <input
+                    type="tel"
+                    name="phone"
+                    placeholder="Phone Number"
+                    required
+                >
+
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Email Address"
+                    required
+                >
+
+                <input
+                    type="date"
+                    name="date"
+                    required
+                >
+
+                <select name="room" required>
+                    <option value="">Select Room Type</option>
+                    <option value="Single Sharing">
+                        Single Sharing
+                    </option>
+                    <option value="Double Sharing">
+                        Double Sharing
+                    </option>
+                    <option value="Triple Sharing">
+                        Triple Sharing
+                    </option>
+                </select>
+
+                <button type="submit">
+                    Book Now
+                </button>
+
+            </form>
+
+        </div>
+    </section>
+
+    <footer>
+        © 2026 Ladies Hostel
+    </footer>
+
+    <script>
+        const scriptURL =
+"https://script.google.com/macros/s/AKfycbyTM7D9poTUaH2BKuVYkt8mWV7A6QUc4J5btJ3zCGYwRFhqOTRYHGzxF63NuC8OOdpawg/exec";
+
+        const form = document.getElementById("bookingForm");
+
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            fetch(scriptURL, {
+                method: "POST",
+                body: new FormData(form)
+            })
+            .then(() => {
+                alert("Booking Submitted Successfully!");
+                form.reset();
+            })
+            .catch((error) => {
+                console.error(error);
+                alert("Error submitting booking!");
+            });
+        });
+    </script>
+
+</body>
+</html>

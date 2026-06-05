@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Rooms</title>
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <nav class="navbar">
+    <div class="logo">NS Ladies Hostel</div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="rooms.html">Rooms</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="booking.html">Book Room</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="page-banner">
+Rooms
+</div>
+
+<section class="container">
+<section class="rooms-section">
+
+   <center><h2>Our Accommodation Options</h2>
+    <br>
+    
+    <p class="room-subtitle">
+        Choose the room that best suits your comfort and budget.
+    </p></center>
+
+    <div class="room-container">
+
+<div class="room-card">
+
+    <img src="images/room1.jpg" alt="Single Sharing">
+
+    <div class="room-content">
+        <h3>Single Sharing Room</h3>
+
+        <p>Perfect for privacy and peaceful living.</p>
+
+        <ul>
+            <li>✓ Attached Bathroom</li>
+            <li>✓ Study Table</li>
+            <li>✓ Wardrobe</li>
+            <li>✓ Free Wi-Fi</li>
+        </ul>
+
+        <h4>₹8,000 / Month</h4>
+
+        <a href="booking.html" class="btn">Book Now</a>
+    </div>
+
+</div>
+
+        <div class="room-card">
+            <img src="images/room2.jpg" alt="Double Sharing">
+            <div class="room-content">
+                <h3>Double Sharing Room</h3>
+                <p>Comfortable stay with a roommate.</p>
+
+                <ul>
+                    <li>✓ Attached Bathroom</li>
+                    <li>✓ Study Area</li>
+                    <li>✓ Storage Space</li>
+                    <li>✓ Free Wi-Fi</li>
+                </ul>
+
+                <h4>₹6,000 / Month</h4>
+                <a href="booking.html" class="btn">Book Now</a>
+            </div>
+        </div>
+
+        <div class="room-card">
+            <img src="images/room3.jpg" alt="Triple Sharing">
+            <div class="room-content">
+                <h3>Triple Sharing Room</h3>
+                <p>Budget-friendly option with all amenities.</p>
+
+              <ul>
+                    <li>✓ Attached Bathroom</li>
+                    <li>✓ Individual Cot</li>
+                    <li>✓ Storage Space</li>
+                    <li>✓ Free Wi-Fi</li>
+                </ul>
+
+                <h4>₹4,500 / Month</h4>
+                <a href="booking.html" class="btn">Book Now</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<footer>
+    <p>© 2026 NS Ladies Hostel</p>
+    
+</footer>
+<script src="js/script.js"></script>
+<script>
+const cards = document.querySelectorAll(".selectable-room");
+
+cards.forEach(card => {
+    card.addEventListener("click", function() {
+
+        cards.forEach(c => {
+            c.classList.remove("active");
+        });
+
+        this.classList.add("active");
+    });
+});
+</script>
+</body>
+</html>
