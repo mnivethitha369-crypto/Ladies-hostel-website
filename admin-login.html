@@ -2,23 +2,43 @@
 <html>
 <head>
     <title>Admin Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png"
+          href="images/logo/favicon.png">
+
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
 
-<div class="login-box">
-    <h2>Admin Login</h2>
+<body class="admin-login-body">
 
-    <input type="password"
-           id="password"
-           placeholder="Enter Password">
+<div class="login-container">
 
-    <button onclick="login()">
-        Login
-    </button>
+  <img class="admin-login-logo"
+     src="images/logo/logo.png"
+     alt="Logo">
+
+    <h2>PSY Ladies Hostel</h2>
+
+    <div class="login-box">
+
+        <h3>Admin Login</h3>
+
+        <input
+            type="password"
+            id="password"
+            placeholder="Enter Password">
+
+        <button onclick="login()">
+            Login
+        </button>
+
+    </div>
+
 </div>
 
 <script>
+
 function login(){
 
     const password =
@@ -26,14 +46,17 @@ function login(){
 
     if(password === "NS123"){
 
-        window.location.href = "admin.html";
+        window.location.href =
+        "admin.html";
 
     }else{
 
         alert("Wrong Password");
 
     }
+
 }
+
 </script>
 
 </body>

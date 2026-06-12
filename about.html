@@ -2,36 +2,63 @@
 <html>
 <head>
 <title>About Us</title>
+ <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png"  sizes="32x32" href="images/logo/favicon.png">
 <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
 <nav class="navbar">
-    <div class="logo">NS Ladies Hostel</div>
 
-    <ul class="nav-links">
+    <div class="logo">
+        <img src="images/logo/logo.png" alt="Logo">
+         <span>PSY Ladies Hostel</span>
+    </div>
+
+    <button class="hamburger" id="hamburger-btn" onclick="toggleNav()">
+
+    <div class="bar bar-1"></div>
+    <div class="bar bar-2"></div>
+    <div class="bar bar-3"></div>
+
+</button>
+
+    <ul class="nav-links" id="navMenu">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="rooms.html">Rooms</a></li>
         <li><a href="gallery.html">Gallery</a></li>
         <li><a href="booking.html">Book Room</a></li>
         <li><a href="contact.html">Contact</a></li>
-        
     </ul>
+
 </nav>
 
 
-<div class="page-banner">
-About Us
+<div class="video-banner">
+
+    <video autoplay muted loop playsinline>
+        <source src="videos/banner.mp4" type="video/mp4">
+    </video>
+
+    <div class="banner-text">
+        About Us
+    </div>
+
 </div>
 
 <section class="container">
 
-<center><h2>Welcome to Our NS Ladies Hostel</h2></center>
+<center>
+    <h2 style="color:#ff2b7a;">
+        Welcome to Our PSY QUEENS INN Ladies Hostel
+    </h2>
+</center>
 <br>
 
 <p>
-At our NS Ladies Hostel, we believe that a hostel should be more than just a place to stay—it should feel like a second home. We provide a safe, comfortable, and supportive environment for students, working professionals, and women seeking quality accommodation.
+At our PSY Ladies Hostel, we believe that a hostel should be more than just a place to stay—it should feel like a second home. We provide a safe, comfortable, and supportive environment for students, working professionals, and women seeking quality accommodation.
 </p>
 <br>
 
@@ -62,15 +89,15 @@ At our NS Ladies Hostel, we believe that a hostel should be more than just a pla
                 shopping centers, and public transportation.
             </p>
 
-            <h3>Our Mission</h3>
+            <h3><strong>Our Mission</strong></h3>
             <p>
                 To provide affordable and secure accommodation
                 where every resident feels at home.
             </p>
 
-            <h3>Our Vision</h3>
+            <h3><strong>Our Vision</strong></h3>
             <p>
-                To become the most trusted NS ladies hostel by
+                To become the most trusted PSY ladies hostel by
                 maintaining high standards of safety and comfort.
             </p>
 
@@ -116,6 +143,31 @@ At our NS Ladies Hostel, we believe that a hostel should be more than just a pla
     </div>
 
 </section>
+
+<section class="about-features">
+
+    <h2>Who Is This Hostel Perfect For?</h2>
+
+    <div class="feature-container">
+
+        <div class="feature-card">
+            🎓
+            <h3>College Students</h3>
+            <p>Safe and comfortable accommodation near colleges and educational institutions.</p>
+        </div>
+
+        <div class="feature-card">
+            💼
+            <h3>Working Women</h3>
+            <p>Convenient stay with modern facilities for professionals and office-goers.</p>
+        </div>
+        <div class="feature-card">
+    🏥
+    <h3>Doctors & Nurse</h3>
+    <p>Comfortable accommodation for doctors & nurse working in nearby hospitals and clinics.</p>
+</div>
+
+</section>
 <section class="reviews">
 
     <h2>What Our Residents Say</h2>
@@ -158,14 +210,13 @@ At our NS Ladies Hostel, we believe that a hostel should be more than just a pla
 
 </section>
 
-
 <script src="js/script.js"></script>
 ...
 
 <div class="contact-menu">
 
     <!-- Phone -->
-    <a href="tel:+919876543210"
+    <a href="tel:+91 9952431971"
        class="contact-icon phone">
 
         <img src="images/logo/phone.png"
@@ -174,7 +225,7 @@ At our NS Ladies Hostel, we believe that a hostel should be more than just a pla
     </a>
 
     <!-- WhatsApp -->
-    <a href="https://wa.me/919876543210"
+    <a href="https://wa.me/9952431971"
        class="contact-icon whatsapp"
        target="_blank">
 
@@ -184,9 +235,9 @@ At our NS Ladies Hostel, we believe that a hostel should be more than just a pla
     </a>
 
     <!-- Instagram -->
-    <a href="https://instagram.com/ns_ladies_hostel"
-       class="contact-icon instagram"
-       target="_blank">
+ <a href="https://www.instagram.com/psyqueensinn?igsh=MWV3eWJrNnFnODlqNg=="
+   class="contact-icon instagram"
+   target="_blank">
 
         <img src="images/logo/instagram.png"
              alt="Instagram">
@@ -203,12 +254,14 @@ At our NS Ladies Hostel, we believe that a hostel should be more than just a pla
 <script src="js/script.js"></script>
 <footer class="footer">
 
-    <p>© 2026 NS Ladies Hostel | All Rights Reserved</p>
+    <p>© 2026 PSY Ladies Hostel | All Rights Reserved</p>
 
     <div class="footer-links">
-        <a href="tel:+919876543210">📞 Call</a>
-        <a href="https://wa.me/919876543210">💬 WhatsApp</a>
-        <a href="https://instagram.com/ns_ladies_hostel">📷 Instagram</a>
+        <a href="tel:+91 9952431971">📞 Call</a>
+        <a href="https://wa.me/9952431971">💬 WhatsApp</a>
+        <a href="https://www.instagram.com/psyqueensinn?igsh=MWV3eWJrNnFnODlqNg==">
+    📷 Instagram
+</a>
     </div>
 
 

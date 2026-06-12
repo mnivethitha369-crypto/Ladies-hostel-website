@@ -1,50 +1,73 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Admin Panel</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Admin Dashboard</title>
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png"
+          href="images/logo/favicon.png">
+
+    <link rel="stylesheet"
+          href="css/style.css">
 </head>
-<body>
 
-  
+<body class="admin-body">
+<div class="admin-header">
 
-<div class="admin-container">
-
-    <h1>NS Ladies Hostel</h1>
-    <p>Admin Dashboard</p>
-
-    <div class="stats">
-
-        <div class="stat-card">
-            <h2>Bookings</h2>
-            <span>View All</span>
-        </div>
-
-        <div class="stat-card">
-            <h2>Rooms</h2>
-            <span>Manage</span>
-        </div>
-
-        <div class="stat-card">
-            <h2>Contact</h2>
-            <span>Messages</span>
-        </div>
-
+    <div class="admin-logo">
+        <img src="images/logo/logo.png" alt="Logo">
+        <span>PSY Ladies Hostel</span>
     </div>
 
-    <div class="admin-actions">
-
-        <a href="https://docs.google.com/spreadsheets/d/15opjUcno6-IAItYMZ8_RTCOc35k9TNgFSauWgaESYCo/edit?usp=sharing"
-           target="_blank"
-           class="admin-btn">
-           📋 View Bookings
-        </a>
-
-    </div>
+    <a href="admin-login.html" class="logout-btn">
+        Logout
+    </a>
 
 </div>
 
-</body>
+</div>
+</div>
+<div class="dashboard-title">
+    <h1>Admin Dashboard</h1>
+    <p>Manage hostel bookings and information</p>
+</div>
+
+<div class="dashboard-cards">
+
+    <div class="dashboard-card">
+        <h2>Bookings</h2>
+        <p>View all bookings</p>
+    </div>
+
+    <div class="dashboard-card">
+        <h2>Rooms</h2>
+        <p>Manage rooms</p>
+    </div>
+
+    <div class="dashboard-card">
+        <h2>Contact</h2>
+        <p>View messages</p>
+    </div>
+
+    <div class="dashboard-card">
+        <h2>Reports</h2>
+        <p>Monthly reports</p>
+    </div>
+
+</div>
+<div class="admin-actions">
+
+    <a href="https://docs.google.com/spreadsheets/d/15opjUcno6-IAItYMZ8_RTCOc35k9TNgFSauWgaESYCo/edit?usp=sharing"
+       target="_blank"
+       class="admin-btn">
+
+       View Bookings
+
+    </a>
+
+</div>
 
 </body>
 </html>
