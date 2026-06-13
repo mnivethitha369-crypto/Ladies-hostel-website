@@ -2370,3 +2370,98 @@
     }
 
 }
+.about-image{
+    position:relative;
+    display:inline-block;
+    border-radius:25px;
+    padding:8px;
+    overflow:hidden;
+}
+
+/* Rotating Animated Border */
+.about-image::before{
+    content:'';
+    position:absolute;
+    inset:-8px;
+    background:conic-gradient(
+    #ff1493,
+    #ff69b4,
+    #c71585,
+    #ff85c1,
+    #ff1493
+);
+    animation: rotateBorder 4s linear infinite;
+    z-index:0;
+}
+
+/* Dark Layer */
+.about-image::after{
+    content:'';
+    position:absolute;
+    inset:4px;
+    background:#fff;
+    border-radius:20px;
+    z-index:1;
+}
+
+.about-image img{
+    position:relative;
+    z-index:2;
+    display:block;
+    width:100%;
+    max-width:500px;
+    border-radius:18px;
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.15);
+
+animation:
+    float 4s ease-in-out infinite;
+}
+
+/* Hover Effects */
+.about-image:hover img{
+    transform:scale(1.05) rotate(2deg);
+    box-shadow:
+        0 20px 40px rgba(0,0,0,.25);
+}
+
+/* Floating */
+@keyframes float{
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-15px);
+    }
+}
+
+/* Border Rotation */
+@keyframes rotateBorder{
+    100%{
+        transform:rotate(360deg);
+    }
+}
+
+
+.about-image span{
+    position:absolute;
+    width:10px;
+    height:10px;
+    background:#00bfff;
+    border-radius:50%;
+    animation:particle 5s linear infinite;
+}
+
+@keyframes particle{
+    0%{
+        transform:translateY(0) scale(0);
+        opacity:0;
+    }
+    50%{
+        opacity:1;
+    }
+    100%{
+        transform:translateY(-120px) scale(1);
+        opacity:0;
+    }
+}
